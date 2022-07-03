@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contact_form {
+  background-color: #222222;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.contact_form form {
+  background-color: #222222;
+  position: relative;
+}
+
+.contact_form form h3 {
+  color: white;
+  border-left: 3px solid #FF724C;
+  padding-left: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.contact_form form .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.contact_form form .inputs input {
+  width: 100%;
+  border: 1px solid #969696;
+  font-size: 1rem;
+  outline: none;
+  padding: 15px 10px;
+  background-color: transparent;
+  caret-color: #FF724C;
+}
+
+.contact_form form .inputs #contact {
+  margin-bottom: 30px;
+}
+
+.contact_form form .inputs input[type='text'],
+.contact_form form .inputs input[type='email'] {
+  color: #FF724C;
+}
+
+.contact_form form .inputs input:focus {
+  border-bottom: 2px solid #FF724C;
+}
+
+.contact_form form .inputs #fullName {
+  position: absolute;
+  z-index: 555;
+  top: 3.5rem;
+  color: antiquewhite;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  display: inherit;
+}
+
+.contact_form form .inputs #email {
+  position: absolute;
+  z-index: 555;
+  bottom: 10px;
+  color: antiquewhite;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+.contact_form form textarea {
+  font-size: 1rem;
+  caret-color: #FF724C;
+  border: 1px solid #969696;
+  outline: none;
+  background-color: transparent;
+  position: relative;
+  color: #FF724C;
+  padding-top: 10px;
+  padding-left: 10px;
+  display: block;
+}
+
+.contact_form form #message {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact_form form #btn {
+  padding: 15px 30px;
+  width: 100%;
+  margin: 25px 0px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #FF724C;
+  color: white;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact_form form #btn:hover {
+  background-color: #FF724C;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=contact.css.map */

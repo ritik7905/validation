@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/contact.css">
+</head>
+
+<body>
+ <div class="contact_form">
+        <form action="" method="get" id="myForm" onsubmit="return validation()">
+            <h3>Contact Form</h3>
+            <div class="inputs">
+                <input type="text" placeholder="Full Name" id="name" name="fullName" onblur="onBlur(this)" />
+                <span id="fullName"></span>
+                <input type="email" placeholder="Email Address" id="contact" name="email" onblur="onBlur(this)" />
+                <span id="email"></span>
+            </div>
+
+            <textarea name="message" id="msg" cols="50" onblur="onBlur(this)" rows="6"
+                placeholder="Message for me"></textarea>
+            <span id="message"></span>
+            <button type="submit" id="btn">Send Message</button>
+        </form>
+    </div>
+    </div>
+    </section>
+    </div>
+    </div>
+
+    <!-- Validation -->
+    <script src="./js/contact.js"></script>
+    <!-- AOS DAta -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

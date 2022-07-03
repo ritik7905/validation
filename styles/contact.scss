@@ -1,0 +1,105 @@
+@import '../variables/color';
+@import '../variables/font';
+@import '../variables/mixins';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact_form {
+  background-color: $primary-bg-color;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  form {
+    background-color: $primary-bg-color;
+    position: relative;
+    h3 {
+      color: $white;
+      border-left: 3px solid$profile;
+      padding-left: 10px;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      width: fit-content;
+    }
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      position: relative;
+      input {
+        width: 100%;
+        border: 1px solid $text-gray-1;
+        font-size: 1rem;
+        outline: none;
+        padding: 15px 10px;
+        background-color: transparent;
+        caret-color: $profile;
+      }
+      #contact {
+        margin-bottom: 30px;
+      }
+      input[type='text'],
+      input[type='email'] {
+        color: $profile;
+      }
+      input:focus {
+        border-bottom: 2px solid $profile;
+      }
+      #fullName {
+        position: absolute;
+        z-index: 555;
+        top: 3.5rem;
+        color: antiquewhite;
+        transition: all 1s;
+        font-family: $font-family_2;
+        font-size: 12px;
+        display: inherit;
+      }
+      #email {
+        position: absolute;
+        z-index: 555;
+        bottom: 10px;
+        color: antiquewhite;
+        font-family: $font-family_2;
+        font-size: 12px;
+      }
+    }
+    textarea {
+      font-size: 1rem;
+      caret-color: $profile;
+      border: 1px solid $text-gray-1;
+      outline: none;
+      background-color: transparent;
+      position: relative;
+      color: $profile;
+      padding-top: 10px;
+      padding-left: 10px;
+      display: block;
+    }
+    #message {
+      position: absolute;
+      display: flex;
+    }
+    #btn {
+      padding: 15px 30px;
+      width: 100%;
+      margin: 25px 0px;
+      background-color: transparent;
+      outline: none;
+      border: 2px solid $profile;
+      color: white;
+      font-size: 1rem;
+      font-family: $font-family_2;
+    }
+    #btn:hover {
+      background-color: $profile;
+      transition: all 0.9s;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  }
+}
